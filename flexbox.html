@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        border: 3px solid gray;
+        height: 500px;
+        display: flex;
+        /* justify-content:space-evenly; */
+        /* justify-content: center; */
+        /* justify-content: end; */
+        /* justify-content: space-evenly; */
+
+        /* align-items: flex-end; */
+        justify-content: center;
+   
+      }
+      .box {
+        height: 500px;
+        
+        border: 3px dotted salmon;
+        /* font-size: 30px; */
+        color: #000;
+      }
+
+      #box-2{
+        /* order: 1; */
+      }
+
+      #box-1{
+        flex-grow: 1;
+        /* order: 2; */
+      }
+
+
+   
+    </style>
+  </head>
+  <body>
+    <h1>I Am Flexible Right Now</h1>
+    <div class="container">
+      <div id="box-1" class="box">Box-1</div>
+      <dv id="box-2" class="box">
+        <h3>BOX-2</h3>
+        <article class="blog">
+          <h4>Blog-1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ex assumenda minus eius sint sapiente doloribus quibusdam dolorum, laudantium odio sequi, facilis corrupti. Nulla at dolor molestias totam officia hic?</p>
+        </article>
+        <article class="blog">
+          <h4>Blog-2</h4>
+          <p>Nostrum molestias distinctio eveniet repellat saepe animi cum esse laborum, alias tenetur repellendus consequuntur perferendis aspernatur et velit necessitatibus consectetur odit. Mollitia hic error sapiente. Iusto a nostrum ut itaque.</p>
+        </article>
+        <article class="blog">
+          <h4>Blog-3</h4>
+          <p>Error minima sit veritatis, officia non voluptas, dolor amet illum excepturi explicabo, repellendus earum eveniet eius aliquid? Et dignissimos expedita autem corrupti voluptatem quibusdam ea provident, quos placeat, error incidunt!</p>
+        </article>
+      
+      
+    </div>
+  </body>
+</html>
